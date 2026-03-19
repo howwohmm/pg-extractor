@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+html/
+paul_graham_essays_text/
+paul_graham_essays.json
+paul_graham_essays_updated.json
+quotes.json
