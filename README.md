@@ -1,13 +1,13 @@
 # pg-extractor
 
-Python scripts to scrape all Paul Graham essays and extract them into structured JSON + a quotes dataset.
+These Python scripts scrape all Paul Graham essays and extract them into structured JSON and a quotes dataset.
 
 ## What it does
 
-- Fetches every essay from paulgraham.com
+- Fetches all essays from paulgraham.com
 - Cleans and normalizes the HTML
-- Outputs `paul_graham_essays.json` — structured dataset with title, URL, date, full text
-- `extract_quotes.js` — pulls quotable sentences from the essays into a separate `quotes.json`
+- Outputs `paul_graham_essays.json`, a structured dataset with title, URL, date, and full text
+- `extract_quotes.js` extracts quotable sentences from the essays and writes them to a separate `quotes.json`
 
 ## Scripts
 
@@ -23,9 +23,9 @@ Python scripts to scrape all Paul Graham essays and extract them into structured
 
 ## Output
 
-- `paul_graham_essays.json` — ~1100-line structured dataset
-- `paul_graham_essays_text/` — individual `.txt` files per essay
-- `quotes.json` — curated quotes dataset
+- `paul_graham_essays.json`: a structured dataset, about 1100 lines
+- `paul_graham_essays_text/`: one `.txt` file per essay
+- `quotes.json`: a curated quotes dataset
 
 ## Run it
 
@@ -35,8 +35,8 @@ python extract_essays.py
 python verify_extraction.py
 ```
 
-No API keys needed. Pure scraping + parsing.
+The scripts need no API keys. They only scrape and parse.
 
 ## Status
 
-Done. Used as a dataset for AI training experiments and a quotes Chrome extension.
+Done. The dataset supports AI training experiments and a quotes Chrome extension.
